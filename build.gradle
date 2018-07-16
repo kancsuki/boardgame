@@ -1,0 +1,29 @@
+plugins {
+    id "org.springframework.boot" version "2.0.3.RELEASE"
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    sourceCompatibility = 8
+
+    group = 'com.example.boardgame'
+    version = '0.1.0-SNAPSHOT'
+}
+
+dependencies {
+}
+
+task wrapper(type: Wrapper) {
+    distributionType = Wrapper.DistributionType.ALL
+    gradleVersion = '4.8' // version required
+}

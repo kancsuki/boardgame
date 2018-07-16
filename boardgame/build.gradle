@@ -1,0 +1,9 @@
+sourceCompatibility = 8
+
+bootJar {
+    launchScript()
+}
+
+dependencies {
+    compile project(':common')
+}
