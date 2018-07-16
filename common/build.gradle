@@ -3,3 +3,11 @@ sourceCompatibility = 8
 dependencies {
     compile('org.springframework.boot:spring-boot-starter')
 }
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
